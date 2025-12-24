@@ -1,0 +1,65 @@
+body {
+}
+
+form {
+    text-align: center;
+    border: 1px solid;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    background: grey;
+}
+
+label {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+input {
+    margin-top: 1.1rem;
+    width: 10rem;
+    height: 1.5rem;
+    border-radius: 20px;
+    border: none;
+    font-weight: 500;
+    font-size: 18px;
+    background: whitesmoke;
+    padding-left: 10px;
+}
+
+button {
+    width: 8rem;
+    height: 1.8rem;
+    border: none;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    font-size: 18px;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+button:disabled {
+    background: #555;
+    cursor: not-allowed;
+}
+
+#successMsg {
+    display: none;
+    color: lightgreen;
+    font-size: 18px;
+    margin-top: 15px;
+}
