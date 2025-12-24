@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<form>
+			<h1>Login form</h1>
+			<label for="name">Name:</label><br>
+			<input type="text" placeholder="Enter name" required><br /><br />
+
+			<label for="username">Username:</label><br>
+			<input type="text" placeholder="username" required><br /><br />
+
+			<label for="password">Password:</label><br>
+			<input type="text" placeholder="password" required><br /><br />
+
+			<label for="email">Email:</label><br>
+			<input type="text" placeholder="Enter email" required><br /><br />
+
+			<button type="submit" id="submitBtn">Submit</button>
+			<button type="reset">Reset</button>
+			<p id="successMsg">Login successful ✅</p>
+
+		</form>
+
+		<script>
+		document.querySelector("form").addEventListener("submit", function (e) {
+		    e.preventDefault();
+
+		    const btn = document.getElementById("submitBtn");
+		    btn.disabled = true;
+		    btn.textContent = "Submitting...";
+
+		    document.getElementById("successMsg").style.display = "block";
+		});
+		</script>
+
+	</body>
+</html> 
